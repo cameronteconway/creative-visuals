@@ -1,3 +1,13 @@
+let numberOfDrops = 150;
+let rain = [];
+
+function setup() {
+  createCanvas(500, 500);
+  for (let i = 0; i < numberOfDrops; i++) {
+    rain.push(new Drop())
+  }
+}
+
 function draw() {
   background(0);
   for (let i = 0; i < rain.length; i++) {
