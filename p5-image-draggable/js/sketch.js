@@ -26,7 +26,7 @@ async function preload() {
 };
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(windowWidth, windowHeight);
 };
 
 // When mouse is dragged add new image to array and remove last one, iterate through 10

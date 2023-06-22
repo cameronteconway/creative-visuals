@@ -1,0 +1,62 @@
+main .projects {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin: 15px 0;
+}
+
+main .projects .project-item {
+    /* border: 1px solid red; */
+    text-decoration: none;
+}
+main .projects .project-item:hover span,
+main .projects .project-item:focus span {
+    text-decoration: underline;
+}
+main .projects .project-item:hover p,
+main .projects .project-item:focus p {
+    color: rgb(50, 50, 50);
+}
+main .projects .project-item:hover img,
+main .projects .project-item:focus img {
+    /* opacity: 0.7; */
+}
+
+
+
+main .projects .project-item span {
+    font-weight: bolder;
+    display: block;
+    margin-bottom: -5px;
+}
+main .projects .project-item p {
+    color: rgb(150, 150, 150);
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+main .projects .project-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Medium devices (landscape tablets, 500px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+    main .projects {
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 30px;
+        margin: 60px 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    
+}
+
+@media only screen and (min-width: 1200px) {
+}

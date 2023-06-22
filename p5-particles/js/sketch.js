@@ -3,7 +3,7 @@ let particles = [];
 let colours = [];
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(windowWidth, windowHeight);
   // Generate random colour values for the dots
   for (let i = 0; i < numOfParticles; i++) {
     let rgbObj = {red: Math.round(random(0, 254)), green: Math.round(random(0, 254)), blue: Math.round(random(0, 254))}

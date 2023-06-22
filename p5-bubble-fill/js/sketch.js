@@ -23,7 +23,7 @@ function addBubbles() {
 }
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
   setInterval(addBubbles, 500);
   background(0);
 }
